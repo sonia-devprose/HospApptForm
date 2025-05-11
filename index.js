@@ -15,13 +15,13 @@ document.addEventListener(("DOMContentLoaded"), ()=>{
 	const department = document.getElementById("department")
 
 // It is a simple validation
-	if (!name || !mail || !date || !department)
+	if (!name.value || !mail.value || !date.value || !department.value)
 	{
-		alert("Please fill in all the fields!")
+		showError("Please fill in all the fields!")
 		return
 	}
 
-confirmation.textContent = `Thank you ${name.value}. Your appointment for ${department.value} is confirmed for ${date.value}.`
+confirmation.textContent = `Thank you ${name.value.trim()}. Your appointment for ${department.value.trim()} is confirmed for ${date.value.trim()}.`
 
 confirmation.classList.remove("hidden")
 
