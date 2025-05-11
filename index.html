@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Serenity Clinic - Book an appointment</title>
+	<link rel="stylesheet" href="./styles.css" />
+	<script defer src="./index.js"></script>
+</head>
+<body>
+	<h2>Book an appointment</h2>
+	<form id="appointmentForm">
+		<div class="container">
+		<div>
+		<label for="text">Enter your name:</label>
+		<input type="text" id="text" required />
+		</div>
+		<div>
+		<label for="email">Enter your email id:</label>
+		<input type="email" id="email" required/>
+		</div>
+		<div>
+		<label for="date">Select a date to book your appointment</label>
+		<input type="date" id="date" required />
+		</div>
+		<div>
+		<label for="department">Select a speciality</label>
+		<select id="department" id="department" required>
+
+			<option value="">--Select--</option>
+			<option value="pediatrics">pediatrics</option>
+			<option value="Cardiology">Cardiology</option>
+			<option value="Nephrology">Nephrology</option>
+			<option value="ENT">ENT</option>
+			<option value="General Internal Medicine">General Internal Medicine</option>
+			<option value="Gastroenterology">Gastroenterology</option>
+			<option value="Endocrinology">Endocrinology</option>
+			<option value="Pulmonology">Pulmonology</option>
+			<option value="Rheumatology">Rheumatology</option>
+			<option value="Hematology">Hematology</option>
+			<option value="Allergy">Allergy</option>
+			<option value="Psychiatry">Psychiatry</option>
+			<option value="Geriatrics<">Geriatrics</option>
+					</select>
+					</div>
+					<div>
+					<button type="submit">Submit</button>
+					</div>
+					</div>
+	</form>
+	<div id="confirmation" class="hidden"></div>
+</div>
+<div>
+	
+</div>
+
+	
+</body>
+</html>
